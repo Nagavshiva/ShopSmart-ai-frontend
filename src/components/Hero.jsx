@@ -1,5 +1,6 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import heroImg from "../assets/hero_img.webp";
+
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -34,7 +35,14 @@ const Hero = () => {
       </div>
 
       {/* Hero Right Side */}
-      <img className="w-full sm:w-1/2" src={assets.hero_img} alt="Hero" />
+      <img
+        className="w-full sm:w-1/2"
+        src={heroImg}
+        alt="Hero"
+        loading="eager"
+        width="600"
+        height="600"
+      />
     </div>
   );
 };
